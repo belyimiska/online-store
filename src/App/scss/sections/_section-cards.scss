@@ -1,0 +1,13 @@
+.section-cards {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.section-cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  row-gap: 10px;
+}
