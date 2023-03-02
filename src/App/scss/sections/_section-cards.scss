@@ -1,13 +1,16 @@
 .section-cards {
-  margin-bottom: 20px;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .section-cards__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: flex-start;
+  align-content: flex-start;
 
-  row-gap: 10px;
+  row-gap: 15px;
+  column-gap: 15px;
+  width: 1025px;
 }

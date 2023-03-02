@@ -1,5 +1,11 @@
+.pagination {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
 .pagination__row {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .pagination__list {

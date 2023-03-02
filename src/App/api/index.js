@@ -1,7 +1,9 @@
-import * as shoes from "./fake.api/shoes.api";
+import shoes from "./fake.api/shoes.api";
+import types from "./fake.api/types.api";
 
 const api = {
-  shoes
+  shoes,
+  types
 };
 
 export default api;

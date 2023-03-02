@@ -1,3 +1,5 @@
+import { typesObject as types } from "./types.api";
+
 const sizes = {
   forty: {
     id: "67rdca3eeb7f6fgeed40",
@@ -22,25 +24,6 @@ const sizes = {
   fortyFive: {
     id: "67rdca3eeb7f6fgeed45",
     title: 45
-  }
-};
-
-const types = {
-  boots: {
-    id: "67rdca3eeb7f6fgeed30",
-    title: "Ботинки"
-  },
-  lowShoes: {
-    id: "67rdca3eeb7f6fgeed31",
-    title: "Полуботинки"
-  },
-  loafers: {
-    id: "67rdca3eeb7f6fgeed32",
-    title: "Лоферы"
-  },
-  moccasin: {
-    id: "67rdca3eeb7f6fgeed33",
-    title: "Мокасины"
   }
 };
 
@@ -314,6 +297,11 @@ const shoes = [
   }
 ];
 
-export function fetchAll() {
-  return shoes;
-}
+const fetchAll = () =>
+  new Promise((resolve) => {
+    window.setTimeout(function () {
+      resolve(shoes);
+    }, 2000);
+  });
+
+export default { fetchAll };
