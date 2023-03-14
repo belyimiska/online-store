@@ -5,7 +5,12 @@
 @import "./sections/section-cards";
 @import "./sections/section-filter";
 @import "./sections/section-products";
+@import "./sections/section-product";
+@import "./sections/section-login";
 
 // Blocks
 @import "./blocks/card";
 @import "./blocks/pagination";
+@import "./blocks/sort";
+@import "./blocks/nav";
+@import "./blocks/form";

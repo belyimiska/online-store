@@ -304,4 +304,11 @@ const fetchAll = () =>
     }, 2000);
   });
 
-export default { fetchAll };
+const getById = (id) =>
+  new Promise((resolve) => {
+    window.setTimeout(function () {
+      resolve(shoes.find((shoe) => shoe.id === id));
+    }, 1000);
+  });
+
+export default { fetchAll, getById };

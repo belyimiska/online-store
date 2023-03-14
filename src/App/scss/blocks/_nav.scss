@@ -1,0 +1,16 @@
+.nav {
+  padding-top: 20px;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 20px;
+
+  li {
+    font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

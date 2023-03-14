@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const Shoes = ({ title, price, imgUrl, brand }) => {
+const ShoesCard = ({ title, price, imgUrl, brand, id }) => {
   return (
-    <>
+    <Link to={`/shoes/${id}`} className="card-link">
       <div className="card">
         <div className="card__img">
           <img src={imgUrl} alt="shoe" />
@@ -22,15 +23,16 @@ const Shoes = ({ title, price, imgUrl, brand }) => {
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 
-Shoes.propTypes = {
+ShoesCard.propTypes = {
   title: PropTypes.string,
+  id: PropTypes.string,
   price: PropTypes.number,
   imgUrl: PropTypes.string,
   brand: PropTypes.object
 };
 
-export default Shoes;
+export default ShoesCard;
