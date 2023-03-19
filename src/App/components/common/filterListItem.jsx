@@ -11,7 +11,7 @@ const FilterListItem = ({
   const [isVisible, setIsVisible] = useState(false);
 
   const handleFilterListOpen = () => {
-    setIsVisible(!isVisible);
+    setIsVisible((prevState) => !prevState);
   };
 
   if (!Array.isArray(items)) {

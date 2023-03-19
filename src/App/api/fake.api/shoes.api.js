@@ -71,7 +71,8 @@ const shoes = [
     imgUrl: "/img/shoes/boots/botinki_officine_creative.jpg",
     size: [sizes.forty, sizes.fortyTwo, sizes.fortyThree],
     rate: 4.3,
-    brand: brands.officineCreative
+    brand: brands.officineCreative,
+    searchReq: "Мужские ботинки OFFICINE CREATIVE"
   },
   {
     id: "67rdca3eeb7f6fgeed47002",
@@ -81,7 +82,8 @@ const shoes = [
     imgUrl: "/img/shoes/boots/botinki_vagabond.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyTwo, sizes.fortyFour],
     rate: 4.1,
-    brand: brands.vagabond
+    brand: brands.vagabond,
+    searchReq: "Мужские ботинки VAGABOND"
   },
   {
     id: "67rdca3eeb7f6fgeed47003",
@@ -91,7 +93,8 @@ const shoes = [
     imgUrl: "/img/shoes/boots/botinki_tommy_hilfiger.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFive],
     rate: 4.5,
-    brand: brands.tommyHilgiger
+    brand: brands.tommyHilgiger,
+    searchReq: "Мужские ботинки TOMMY HILFIGER"
   },
   {
     id: "67rdca3eeb7f6fgeed47004",
@@ -101,7 +104,8 @@ const shoes = [
     imgUrl: "/img/shoes/boots/botinki_crispiniano.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyThree, sizes.fortyFour],
     rate: 4.6,
-    brand: brands.crispiniano
+    brand: brands.crispiniano,
+    searchReq: "Мужские ботинки CRISPINIANO"
   },
   {
     id: "67rdca3eeb7f6fgeed47005",
@@ -111,7 +115,8 @@ const shoes = [
     imgUrl: "/img/shoes/boots/botinki_officine_creative_accademia.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFour],
     rate: 4.9,
-    brand: brands.officineCreative
+    brand: brands.officineCreative,
+    searchReq: "Мужские ботинки OFFICINE CREATIVE"
   },
   {
     id: "67rdca3eeb7f6fgeed47006",
@@ -121,7 +126,8 @@ const shoes = [
     imgUrl: "/img/shoes/lowShoes/polubotinki_tendance_t_2817d.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyThree, sizes.fortyFive],
     rate: 4.2,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские полуботинки TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47007",
@@ -131,17 +137,19 @@ const shoes = [
     imgUrl: "/img/shoes/lowShoes/polubotinki_maison_david_m_2278f.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyTwo, sizes.fortyFour],
     rate: 4.9,
-    brand: brands.maisonDavid
+    brand: brands.maisonDavid,
+    searchReq: "Мужские полуботинки MAISON DAVID"
   },
   {
     id: "67rdca3eeb7f6fgeed47008",
-    title: "Мужские полуботинки дерби",
+    title: "Мужские полуботинки",
     type: types.lowShoes,
     price: 9590,
     imgUrl: "/img/shoes/lowShoes/polubotinki_tendance_ya_9092.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFour],
     rate: 4.0,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские полуботинки TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47009",
@@ -151,7 +159,8 @@ const shoes = [
     imgUrl: "/img/shoes/lowShoes/polubotinki_ernesto_dolani.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyTwo, sizes.fortyFour],
     rate: 4.7,
-    brand: brands.ernesto
+    brand: brands.ernesto,
+    searchReq: "Мужские полуботинки ERNESTO DOLANI"
   },
   {
     id: "67rdca3eeb7f6fgeed47010",
@@ -168,7 +177,8 @@ const shoes = [
       sizes.fortyFive
     ],
     rate: 3.8,
-    brand: brands.officineCreative
+    brand: brands.officineCreative,
+    searchReq: "Мужские полуботинки OFFICINE CREATIVE"
   },
   {
     id: "67rdca3eeb7f6fgeed47011",
@@ -184,7 +194,8 @@ const shoes = [
       sizes.fortyFour
     ],
     rate: 4.4,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские лоферы TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47012",
@@ -194,7 +205,8 @@ const shoes = [
     imgUrl: "/img/shoes/loafers/loafer_tendance_y112a.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFour],
     rate: 4.7,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские лоферы TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47013",
@@ -210,7 +222,8 @@ const shoes = [
       sizes.fortyFive
     ],
     rate: 4.9,
-    brand: brands.officineCreative
+    brand: brands.officineCreative,
+    searchReq: "Мужские лоферы OFFICINE CREATIVE"
   },
   {
     id: "67rdca3eeb7f6fgeed47014",
@@ -220,7 +233,8 @@ const shoes = [
     imgUrl: "/img/shoes/loafers/loafer_ernesto_dolani_uchu06.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFive],
     rate: 4.7,
-    brand: brands.ernesto
+    brand: brands.ernesto,
+    searchReq: "Мужские лоферы ERNESTO DOLANI"
   },
   {
     id: "67rdca3eeb7f6fgeed47015",
@@ -230,7 +244,8 @@ const shoes = [
     imgUrl: "/img/shoes/loafers/loafer_ernesto_dolani_uzan01.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree],
     rate: 4.8,
-    brand: brands.ernesto
+    brand: brands.ernesto,
+    searchReq: "Мужские лоферы ERNESTO DOLANI"
   },
   {
     id: "67rdca3eeb7f6fgeed47016",
@@ -247,7 +262,8 @@ const shoes = [
       sizes.fortyFive
     ],
     rate: 4.4,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские мокасины TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47017",
@@ -257,7 +273,8 @@ const shoes = [
     imgUrl: "/img/shoes/mocassin/mokasiny_tendance_sm45578.jpg",
     size: [sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree, sizes.fortyFour],
     rate: 4.7,
-    brand: brands.tendance
+    brand: brands.tendance,
+    searchReq: "Мужские мокасины TENDANCE"
   },
   {
     id: "67rdca3eeb7f6fgeed47018",
@@ -267,7 +284,8 @@ const shoes = [
     imgUrl: "/img/shoes/mocassin/mokasiny_calvin_klein_kwinten.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree],
     rate: 5.0,
-    brand: brands.calvinKlein
+    brand: brands.calvinKlein,
+    searchReq: "Мужские мокасины CALVIN KLEIN"
   },
   {
     id: "67rdca3eeb7f6fgeed47019",
@@ -277,7 +295,8 @@ const shoes = [
     imgUrl: "/img/shoes/mocassin/mokasiny_officine_creative_newindi_002.jpg",
     size: [sizes.forty, sizes.fortyOne, sizes.fortyTwo, sizes.fortyThree],
     rate: 4.6,
-    brand: brands.officineCreative
+    brand: brands.officineCreative,
+    searchReq: "Мужские мокасины OFFICINE CREATIVE"
   },
   {
     id: "67rdca3eeb7f6fgeed47020",
@@ -293,7 +312,8 @@ const shoes = [
       sizes.fortyFour
     ],
     rate: 4.4,
-    brand: brands.maisonDavid
+    brand: brands.maisonDavid,
+    searchReq: "Мужские мокасины MAISON DAVID"
   }
 ];
 

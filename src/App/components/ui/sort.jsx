@@ -39,40 +39,33 @@ const Sort = ({ onSort }) => {
 
   return (
     <div className="sort">
-      <div className="container">
-        <div className="sort__wrapper">
-          <span className="sort__label">Сортировка по:</span>
-          <span onClick={handleSortListOpen} className="sort__type">
-            {selectedType}
-          </span>
+      <span className="sort__label">Сортировка по:</span>
+      <span onClick={handleSortListOpen} className="sort__type">
+        {selectedType}
+      </span>
 
-          {isOpened && (
-            <div className="sort__popup">
-              <ul className="sort__popup-list">
-                {Object.keys(sortList).map((sortItem) => (
-                  <li
-                    onClick={() =>
-                      handleSort(
-                        sortList[sortItem].iter,
-                        sortList[sortItem].title
-                      )
-                    }
-                    className={
-                      "sort__popup-list-item" +
-                      (sortList[sortItem].title === selectedType
-                        ? " sort__popup-list-item--active"
-                        : "")
-                    }
-                    key={sortList[sortItem].id}
-                  >
-                    {sortList[sortItem].title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+      {isOpened && (
+        <div className="sort__popup">
+          <ul className="sort__popup-list">
+            {Object.keys(sortList).map((sortItem) => (
+              <li
+                onClick={() =>
+                  handleSort(sortList[sortItem].iter, sortList[sortItem].title)
+                }
+                className={
+                  "sort__popup-list-item" +
+                  (sortList[sortItem].title === selectedType
+                    ? " sort__popup-list-item--active"
+                    : "")
+                }
+                key={sortList[sortItem].id}
+              >
+                {sortList[sortItem].title}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      )}
     </div>
   );
 };

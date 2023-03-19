@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import FilterListItem from "./ui/filterListItem";
+import FilterListItem from "./filterListItem";
 
 const FilterList = ({
   items,

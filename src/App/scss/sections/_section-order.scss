@@ -1,0 +1,13 @@
+.section-order {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.section-order__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
