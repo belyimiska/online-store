@@ -1,0 +1,31 @@
+.form-check {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-check__row {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 5px;
+
+  margin-bottom: 15px;
+}
+
+.form-check_input {
+  display: block;
+  flex-shrink: 0;
+
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+.form-check__label {
+  font-size: 18px;
+}
+
+.form-check__error {
+  font-size: 18px;
+  color: rgb(255, 108, 108);
+}

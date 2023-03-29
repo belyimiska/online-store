@@ -6,7 +6,7 @@
 @import "./sections/section-filter";
 @import "./sections/section-products";
 @import "./sections/section-product";
-@import "./sections/section-login";
+@import "./sections/section-auth";
 @import "./sections/section-order";
 
 // Blocks
@@ -14,5 +14,9 @@
 @import "./blocks/pagination";
 @import "./blocks/sort";
 @import "./blocks/nav";
+@import "./blocks/login-form";
+@import "./blocks/filter";
 @import "./blocks/form";
+@import "./blocks/form-check";
 @import "./blocks/search";
+@import "./blocks/select-field";

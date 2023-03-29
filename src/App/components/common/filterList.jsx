@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import FilterListItem from "./filterListItem";
+// import FilterListItem from "./filterListItem";
 
 const FilterList = ({
   items,
@@ -11,27 +11,26 @@ const FilterList = ({
   onClear
 }) => {
   return (
-    <section className="filter-block">
-      <div className="filter-block__wrapper">
-        <h4 className="filter-block__title">фильтры</h4>
+    <div className="filter-block">
+      <button className="filter-block__clear-btn" onClick={onClear}>
+        все
+      </button>
 
-        <div className="filter-block__content">
-          <FilterListItem
-            items={items}
-            onItemSelect={onItemSelect}
-            selectedItem={selectedItem}
-            valueProperty={valueProperty}
-            contentProperty={contentProperty}
-          />
-        </div>
-
-        <div className="filter-block__clear">
-          <button className="filter-block__clear-btn" onClick={onClear}>
-            сбросить фильтры
-          </button>
-        </div>
-      </div>
-    </section>
+      <ul className="filter-block__list">
+        {items.map((item) => (
+          <li
+            key={item[valueProperty]}
+            className={
+              "filter-block__list-item" +
+              (item === selectedItem ? " filter-block__list-item--active" : "")
+            }
+            onClick={() => onItemSelect(item)}
+          >
+            {item[contentProperty]}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

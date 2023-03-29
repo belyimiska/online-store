@@ -1,0 +1,46 @@
+.filter-block {
+  display: flex;
+  column-gap: 15px;
+}
+
+.filter-block__clear-btn {
+  display: block;
+  padding: 10px 15px;
+
+  cursor: pointer;
+  border: 1px solid #2e2e2e;
+  border-radius: 20px;
+  background-color: transparent;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}
+
+.filter-block__list {
+  display: flex;
+  column-gap: 15px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.filter-block__list-item {
+  display: block;
+  padding: 10px 15px;
+
+  cursor: pointer;
+  border: 1px solid #2e2e2e;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}
+
+.filter-block__list-item.filter-block__list-item--active {
+  background-color: rgb(231, 231, 231);
+}

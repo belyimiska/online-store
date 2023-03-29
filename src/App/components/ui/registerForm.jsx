@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
+import CheckBoxField from "../common/form/checkBoxField";
 
-const LoginForm = () => {
-  const [data, setData] = useState({ email: "", password: "" });
+const RegisterForm = () => {
+  const [data, setData] = useState({ email: "", password: "", license: false });
   const [errors, setErrors] = useState({});
 
   const handleChange = (target) => {
@@ -32,6 +33,11 @@ const LoginForm = () => {
       minCount: {
         message: "Пароль должен состоять минимум из 8 символов",
         value: 8
+      }
+    },
+    license: {
+      isRequired: {
+        message: "Пожалуйста, подтвердите соглашение"
       }
     }
   };
@@ -76,15 +82,25 @@ const LoginForm = () => {
         error={errors.password}
       />
 
+      <CheckBoxField
+        value={data.license}
+        onChange={handleChange}
+        name="license"
+        error={errors.license}
+      >
+        Я ознакомился (-ась) с условиями и согласен (-а) на обработку
+        персональных данных
+      </CheckBoxField>
+
       <button
         className="section-login__button"
         type="submit"
         disabled={!isValid}
       >
-        Войти
+        Отправить
       </button>
     </form>
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

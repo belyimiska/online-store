@@ -317,17 +317,23 @@ const shoes = [
   }
 ];
 
+if (!localStorage.getItem("shoes")) {
+  localStorage.setItem("shoes", JSON.stringify(shoes));
+}
+
 const fetchAll = () =>
   new Promise((resolve) => {
     window.setTimeout(function () {
-      resolve(shoes);
+      resolve(JSON.parse(localStorage.getItem("shoes")));
     }, 2000);
   });
 
 const getById = (id) =>
   new Promise((resolve) => {
     window.setTimeout(function () {
-      resolve(shoes.find((shoe) => shoe.id === id));
+      resolve(
+        JSON.parse(localStorage.getItem("shoes")).find((shoe) => shoe.id === id)
+      );
     }, 1000);
   });
 

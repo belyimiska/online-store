@@ -96,9 +96,10 @@ const ShoesListPage = () => {
             </div>
           </section>
         )}
-        <section className="section-products">
+
+        <section className="section-filter">
           <div className="container">
-            <div className="section-products__row">
+            <div className="section-filter__row">
               {shoesTypes && (
                 <FilterList
                   items={shoesTypes}
@@ -108,24 +109,27 @@ const ShoesListPage = () => {
                 />
               )}
 
-              {count > 0 && (
-                <section className="section-cards">
-                  <Pagination
-                    itemsCount={count}
-                    pageSize={pageSize}
-                    currentPage={currentPage}
-                    onPageChange={handlePageChange}
-                  />
-                  <div className="section-cards__wrapper">
-                    {shoesCrop.map((shoe) => (
-                      <ShoesCard key={shoe.id} {...shoe} />
-                    ))}
-                  </div>
-                </section>
-              )}
+              <Pagination
+                itemsCount={count}
+                pageSize={pageSize}
+                currentPage={currentPage}
+                onPageChange={handlePageChange}
+              />
             </div>
           </div>
         </section>
+
+        {count > 0 && (
+          <section className="section-cards">
+            <div className="container">
+              <div className="section-cards__wrapper">
+                {shoesCrop.map((shoe) => (
+                  <ShoesCard key={shoe.id} {...shoe} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </>
     );
   }
